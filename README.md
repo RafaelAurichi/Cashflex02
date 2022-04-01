@@ -1,19 +1,25 @@
-# Cashflex02
+# Flatbox Static Site Starter Pack
 
-A hotsite for a corporate benefits company
+## Instalar o Gulp Globalmente
 
-For this project I used Sass to style. It means that you´ll need install the NPM (Node Package Manager) through NodeJS and GULP through NodeJS too.
+```
+npm install -g gulp
+```
 
-Steps for help you:
+## Instalar as Dependências
 
-1. Install nodejs. https://nodejs.org/en/
+```
+npm install
+```
 
-2. Check npm (node package manager) is installed via command prompt: $ npm
+# Rodar projeto localmente
 
-3. Install gulp: $ npm install gulp --global
+```
+gulp watch
+```
 
-4. In relevant project folder, create 'gulpfile.js':
+# Gerar versão de produção
 
-// build flow that copies MyNiceProgram.exe to another // directory (with forced folder creation and overwrite) var gulp = require('gulp'); var exefile = 'some/bin/path/MyNiceProgram.exe'; gulp.task('build', function(){ gulp.src(exefile).pipe(gulp.dest('../../Binaries/')); }); gulp.task('default', ['build'], function(){ gulp.watch(exefile, ['build']); });
-
-5. Run gulp: $ gulp
+```
+gulp build
+```
